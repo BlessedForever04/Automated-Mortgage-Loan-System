@@ -2,7 +2,7 @@
 
 A comprehensive AI-powered system for automating and analyzing mortgage loan applications using Retrieval-Augmented Generation (RAG), embeddings, and document processing.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements an intelligent mortgage loan processing system that:
 - **Extracts** text from PDFs, DOCX files, and images (with OCR support)
@@ -12,7 +12,7 @@ This project implements an intelligent mortgage loan processing system that:
 - **Retrieves** relevant documents based on natural language queries
 - **Generates** accurate answers using FLAN-T5 language model
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Automated-Mortgage-Loan-System/
@@ -26,7 +26,7 @@ Automated-Mortgage-Loan-System/
 └── README.md                                    # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -73,7 +73,7 @@ python Embedding/main.py
 #### Option 3: Google Colab (Cloud-based, no local setup needed)
 Open the `.ipynb` file directly in [Google Colab](https://colab.research.google.com/)
 
-## 🔧 Configuration
+## Configuration
 
 ### Chunk Size
 Modify chunk parameters in the chunking function:
@@ -101,7 +101,7 @@ Adjust the language model for answer synthesis:
 GEN_MODEL_NAME = "google/flan-t5-base"  # Use 'flan-t5-large' for GPU systems
 ```
 
-## 📊 Key Features
+## Key Features
 
 ### Document Processing
 - **PDF Extraction:** Text and OCR-based (handles flattened PDFs)
@@ -125,7 +125,7 @@ GEN_MODEL_NAME = "google/flan-t5-base"  # Use 'flan-t5-large' for GPU systems
 - **Distance Metrics:** Relevance scoring for retrieved documents
 - **Metadata Tracking:** Document source and chunk indexing
 
-## 📖 Example Usage
+## Example Usage
 
 ```python
 from rag_pipeline import rag_answer
@@ -138,7 +138,7 @@ print("Answer:", result["answer"])
 print("Sources:", result["provenance"])
 ```
 
-## 🗂️ Upcoming Modules
+## Upcoming Modules
 
 ### FineTuning (Coming Soon)
 - Fine-tune embedding models on mortgage-specific data
@@ -150,7 +150,7 @@ print("Sources:", result["provenance"])
 - Advanced tool calling capabilities
 - Enhanced multi-step reasoning for complex queries
 
-## 📊 Performance Tips
+## Performance Tips
 
 1. **GPU Acceleration:** Use GPU for faster embeddings and generation
    ```bash
@@ -164,7 +164,7 @@ print("Sources:", result["provenance"])
 
 4. **Model Size:** Use smaller models for faster inference, larger for accuracy
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -173,11 +173,7 @@ print("Sources:", result["provenance"])
 | Slow embeddings | Use `all-MiniLM-L6-v2` instead of `all-mpnet-base-v2` |
 | Poor retrieval | Adjust chunk size or change embedding model |
 
-## 📝 License
-
-[Your License Here]
-
-## 👤 Author
+## Author
 
 **BlessedForever04**
 
@@ -189,10 +185,9 @@ Contributions are welcome! Please follow standard Git workflow:
 3. Commit with clear messages
 4. Push and create a pull request
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please open a GitHub issue.
 
 ---
 
-**Last Updated:** December 2025
