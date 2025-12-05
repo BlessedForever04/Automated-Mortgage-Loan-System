@@ -50,7 +50,7 @@ Automated-Mortgage-Loan-System/
 
 3. **Install dependencies:**
    ```bash
-   pip install sentence-transformers chromadb pdfplumber python-docx pytesseract pillow transformers accelerate sentencepiece torch
+   pip install -r requirements.txt
    ```
 
 4. **Install Tesseract OCR:**
